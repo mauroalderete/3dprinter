@@ -1,0 +1,3 @@
+# Impresora 3D zero
+
+Desarrollo de la primer impresora 3D, esquemas de diseño en solidworks, notas de bitacora, fotografias, procedimientos...
