@@ -41,3 +41,11 @@ Modele la cupla flexible y la tuerca THSL.
 Intente de realizar los cortes por barridos adecuados. En el caso de la cupla por cuestiones de apariencia, en el caso de la tuerca para tratar de poder simular el movimiento una vez que se realiza el montaje.
 
 Seleccione para la tuerca un cuatro elices de paso 8mm, 2 revoluciones con un calado de 1mm de altura y 0,9mm de profundidad. Es una medida empirica pero podría funcionar.
+
+### 20181005-1500
+
+Termine de realizar todo el modelado de las piezas principales. Las que no deberían presentarse con modificaciones y aquellas a las que no se les puede realizar modificaciones. Deje delado los ejes de acero ya que los voy a ir construyendo de las medidas necesarias.
+
+En este punto es cuando la organización en ficheros se vuelve problematica, ya que tengo diversas piezas similares de varias dimensiones, piezas que es difil de nombrar y ensamblajes parciales.
+
+Creo que realizare dos carpetas, una para ensamblados parciales y otra para las piezas a manufacturar
