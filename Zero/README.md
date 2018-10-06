@@ -49,3 +49,17 @@ Termine de realizar todo el modelado de las piezas principales. Las que no deber
 En este punto es cuando la organización en ficheros se vuelve problematica, ya que tengo diversas piezas similares de varias dimensiones, piezas que es difil de nombrar y ensamblajes parciales.
 
 Creo que realizare dos carpetas, una para ensamblados parciales y otra para las piezas a manufacturar
+
+### 20181006-2000
+
+Estuve trabajando en el primer concepto del CNC. Sigo elaborando el eje x. Realice varias modificaciones a las bases, el area de trabajo y cree las piezas principales para soportar los ejes.
+
+Aún falta analizar muchas cosas, pero hasta el momento he logrado determinar que el area de trabajo efectivo será de 35.3 cm cuadrados. 35*35. Lo cual es una caracteristica ampliamente superadora respecto a los modelos planteados mayoriatariamente en internet.
+
+Sin embargo, me preocupa cada vez más la precisión que se requiere para construirlo. Para evitar que los materiales cedan al peso de la estructura estoy pensando en pequeños refuerzos que lograran dotarle a los ejes de una mayor robustes. Pero en la medida en que sigo añadiendo más piezas, el porcentaje de error por impresición aumenta drasticamente.
+
+Una posiblidad es realizar por corte laser las piezas más cruciales... O las que entren en un metro cuadrado de acrilico. Eso ademas de aumentar el precio trae consigo muchas dudas como los limites de temperatura, las tensiones en puntos criticos... etc.
+
+Por el momento, no veo problems con el tamaño final. Será grande, pero es debido a que el area de trbajo tambien lo es.
+
+Espero terminar pronto con el concepto del eje X y continuar con el arco de los otros dos.
