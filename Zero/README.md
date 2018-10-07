@@ -63,3 +63,49 @@ Una posiblidad es realizar por corte laser las piezas más cruciales... O las qu
 Por el momento, no veo problems con el tamaño final. Será grande, pero es debido a que el area de trbajo tambien lo es.
 
 Espero terminar pronto con el concepto del eje X y continuar con el arco de los otros dos.
+
+### 20181007-1830
+
+Logre terminar con el concepto del eje que desplaza el area de trabajo. La zona a cubrir por ese eje es de 353.2mm -0.1
+
+El diseño del eje x esta pensado para que puedan montarse dos motores con sus respectivos tornillos THSL. De esta forma se podría duplicar la fuerza en caso de que el peso del area de trabajo sea demasiado para realizar el empuje.
+
+Esta estrategia tambien significa hacer modificaciones en la electronica y fuente de alimentación.
+
+Por otro lado extendi las piezas que soportan los ejes a una sola pieza que atraviezan todo el ancho del cnc, esto les dara una mayor robustes y ademas será más facil de calibrar y ajustar las piezas durante el montaje minimizando los errores por impresición.
+
+Por ahora estoy intentando diseñar el concepto del arco que transmite el movimiento por el eje y. Resulta un desafio en teniendo encuenta la gran variedad de piezas y posiciones que no pueden determinarse. Si bien muchas piezas cuentan con dimensiones estaticas, su posición puede variar, y esto provoca que las dimensiones de las piezas manufacturadas se vean modificadas ante cada propuesta.
+
+Ademas se presento un problema al que aún no le encuentro una solución optima con los materiales disponibles. Se trata de la resistencia de las varillas acero de 8mm al aplicarle una fuerza perpecdicular al eje. Una sola varilla se tuerce muy facilmente cuando se aplica una fuerza de unas pocas centimas de gramos. Esto se debe a que la distancia que manejara el eje es de practicamente unos 45cm, y el material cede. 
+
+Este problema lo intui en el diseño del eje x que desplaza el area de trabajo, y lo resolvi añadiendo un soporte central que sostiene las varillas en caso de que se les aplique una fuerza normal al suelo. Pero en el caso del eje "y", no es posible adjuntar ninguna clase de soporte sin entorpercer el movimiento de la herramienta.
+
+Una solución es reducir el largo, pero esto sería catastrofico, ya que habria que eliminar unos 20cm para que la resistencia de la torción soporte al menos 1kg. 20cm menos implica un área de trabajo maxima de 10x35cm. Aún así el eje Y esta atravesado por tres varillas. Dos de acero, lo que deberia duplicar la resistencia, y el tornillo THSL, que al contener las formas espiraladas multiplica enormemente la resistencia en comparación a la varilla de acero. Las tres piezas a un largo de 40cm, logran soportar cerca de unos 5kg antes de comenzar a ceder.
+
+Otra estrategia podría ser la de realizar una suerte de riel por el que la base de la herramienta "cuelga" con un sistema de rulemanes. Esto tiene varios inconvenientes:
+
+* Es una solución a medio camino entre el uso de varillas, y el uso de hierro estructural y rulemanes.
+* Genera una superficie de contacto mayor, causando mayor resistencia.
+* La calibración puede resultar costosa.
+* Se requieren más materiales.
+* Aún no hay evidencia de que se necesite o de que realmente solucione el problema
+* La fuerza aplicada hacia abajo tendera a causar un dezplazamiento perpendicular hacia el eje del plano x. Lo que causara que la torción de la varilla inferior termine por ser causada hacia otra dirección
+
+Otra estrategia es la de aumentar el largo de las varillas hassta cerca de unos 80cm. Utilizando el mismo sistema que en el caso de la base permitiria montar un soporte central que mantenga la recta de la varilla. Esto significa que el cnc final tendra unos 80x80cm. Las dimensiones son realmente enormes. Pero es una solución más viable que la anterior. Tambien requeriria la compra de mas varillas para montar el eje z.
+
+Otra opción que podría ser viable es cambiar las varillas de 8mm por varillas de acero de 10mm. Tambien deberia cambiar los SC8U.
+
+Por el momento estoy planeando dejarlo de la forma en la que esta. En teoria el eje constituido por las tres varillas deberia ser suficientemente fuerte para soportar el peso del minitorno, que es la herramienta mas pesada hasta el momento.
+
+En caso de que falle, una forma de solución podria ser aplicar un sistema de cancelación de fuerzas con un sitema de resortes calibrados para contrarrestar el peso de la herramienta en los puntos más criticos.
+
+Realizar un calculo infinito seria de gran utilidad para diseñar el sistema de resortes.
+
+Como medida parcial estoy contemplando la idea de apoyar la cupla del eje Y sobre una superficie rigida. Pero debido al trabajo de giro que debe realizar, pienso que lo correcto seria montarlo sobre un ruleman.
+
+Tengo pensado realizar una estructura encastrable para insertar o remover la herramienta. De esta forma cada herramienta ya esta fielmente montada a una estructura parcial, que luego simplemente se encastra y se asegura al CNC. De esta menra puedo lograr mantener una mejor estabilidad sobre la precición entre cambios de herramientas.
+
+El centro de la herramienta cambiara, dependera de las dimensiones de la herramienta. Al modificarse el centro de la herramienta, tambien se modifica el area de trabajo. Aún no seleccione que herramienta tendra el area de trabajo maxima. Pero cualquier otra herramienta cuya distancia desde la base que lo soporta al punto central sea diferente, tendra un area de trabajo menor.
+
+
+
