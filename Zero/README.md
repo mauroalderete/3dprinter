@@ -107,5 +107,16 @@ Tengo pensado realizar una estructura encastrable para insertar o remover la her
 
 El centro de la herramienta cambiara, dependera de las dimensiones de la herramienta. Al modificarse el centro de la herramienta, tambien se modifica el area de trabajo. Aún no seleccione que herramienta tendra el area de trabajo maxima. Pero cualquier otra herramienta cuya distancia desde la base que lo soporta al punto central sea diferente, tendra un area de trabajo menor.
 
+### 20181007-2130
 
+Logre terminar el concepto del Eje Y con un rango de trabajo de 355mm. Por lo cual el area de trabajo efectvo maxima sera de 353x355mm.
 
+Si las varillas son lo suficientemente fuertes para soportar el peso de la herramientas más el eje z entonces se conseguiran grandes resultados.
+
+Existe un punto flojo en la union de la cupla. Debido a que la cupla es flexible, no lograra generar suficiente resistencia al peso. Una opción fue reforzar la cupla introduciendola dentro de dos estructuras laterales, pero esto puede llegar a afectar el giro a menos que se consigan dos rulemanes. Si se consiguen dos rulemanes con un radio de 18mm en el interior, el problema se trasladara a la inserción y sujeción del ruleman. Debido a que el lateral principal tiene calados para que los SCU8 ingresen, esto puede llegar a entorpecer el sector de un ruleman tan grande. Una opción poco rudimentaria consiste en engrasar todo. Cosa que en realidad tengo pensado realizar en todos los ejes con movimiento.
+
+Más adelante hara falta crear soportes diagonales, tanto el los laterales exteriores que conforman el eje y como en las esquinas de la caja grande que determina la forma principal del CNC.
+
+Otro ajuste al diseño del eje Y se debera realizar cuando termine con el eje z y decida que herramienta poseera el mayor area de trabajo. Este ajuste consiste en retirar los laterales una distancia x, recorriendo el eje x con la intención de que el centro de la herramienta coincida con el centro del area de trabajo.
+
+Ahora el siguiente desafio sera diseñar el eje z, y planear la forma en que se pueden insertar las herramientas de manera efectiva. Esto me recuerda que sera necesario ir pensando cuales son los accesorios y cables que debera integrar cada herramienta... filamentos para el extrusor, resorte para el torno...
