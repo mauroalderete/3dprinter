@@ -120,3 +120,40 @@ Más adelante hara falta crear soportes diagonales, tanto el los laterales exter
 Otro ajuste al diseño del eje Y se debera realizar cuando termine con el eje z y decida que herramienta poseera el mayor area de trabajo. Este ajuste consiste en retirar los laterales una distancia x, recorriendo el eje x con la intención de que el centro de la herramienta coincida con el centro del area de trabajo.
 
 Ahora el siguiente desafio sera diseñar el eje z, y planear la forma en que se pueden insertar las herramientas de manera efectiva. Esto me recuerda que sera necesario ir pensando cuales son los accesorios y cables que debera integrar cada herramienta... filamentos para el extrusor, resorte para el torno...
+
+### 20181009-1630
+Estuve investigando sobre distintas alternativas para implementar el carro y el ejez. La forma que se presenta en la mayoria de los casos es un ejez con un solo estatico en la zona superior. El resulta en una caja alta que es sostenida por dos varillas de acero por las que el carro puede descender. Sin bien este metodo funciona bien para el ruteado o corte laser, no es ideal para la impresion 3d.
+
+La altura obtenida por este sistema es alrededor de 1/3 del largo tornillo thsl. Osea dque de 40cm se obtiene una altura practica de un poco mas de 10cm. Esto se debe a que el carro tiene un final de carrera con una pieza grande, fija y estatica. Esta pieza es la que marca la altura de la pieza a trabajar.
+
+Si bien es una forma robusta para evitar el minimo de brivación del cabelaz de la herramienta, es ineficiente para la impresión 3d. Por esa razon se me ocurrio invertir la posición del motor del ejez. En lugar de ubicarlo en la parte superior de forma estatica, pense en ubicarlo en la zona inferior, de manera movil, coincidiendo con la herramienta.
+
+De esta forma, al desplazar el cabezal tambien lo hace el motor. El soporte del tornillo THSL se encuentra fijo en el carro del ejey por lo que el desplazamiento logra obtener el maximo potencial del largo del tornillo thsl. Da como resultado aproximadamente los 40cm de movimiento. Esto resulta impresionante para una impresora 3d.
+
+De poderse construir el ejez la impresora adquiriria un area de trabajo efectivo de 350x355x400. Sin embargo, este concepto no resulta del todo eficiente. El concepto se puede ver con más detalle en la carpeta de ConceptTest/EjeZ Invertido
+
+Un problema es el peso. Al trasladar el motor paso a paso a la zona inferior junto a la herramienta, se le suma al carro el peso del motor. Esto significa un mayor ezfuerso, algo que estaría al limite de las capacidades de un NEMA17. El cambio del motor conlleva tambien a un incremento de su peso. El problema aun persistiría. Una solución potencial es la de unir al carro del ejez un contrapeso.
+
+Investigando un poco encontre que se trata de una solución común para disminuir el efecto del peso del carro sobre el motor del ejez. Sin embargo, los diseños montados trasladan por alguna razon ese peso a los otros dos ejes. Esto se podría anular montando las poleas necesarias sobre la estructura base, por lo que el ezfuerso aplicado no se repercute en los otros ejes.
+
+Sin embargo existe un problema mayor si pensamos en el uso del cnc como ruteador. La traslasión de las brocas ejerce una fuerza de resistencia que depende del material a fresar. Esta fuerza es variable, por lo que se producen vibraciones que oscilan entre la fuerza aplicada a las resistencias estaticas y resistencias dinamicas. Esta vibración es incrementada por el largo de los 40cm que tendria el ejez. Esa distancia entre el punto que soporte el carro y la herramienta se traduce en oscilaciones lo suficientemente altas como para estropear el trabajo.
+
+Por esta razon, si bien es una buena forma de aprovechar los materiales para el montaje de una impresora 3d, estoy descartandolo para el uso de las otras piezas.
+
+Como alternativas me queda o montar un carro convencional sacrificando altura para las piezas de la impresora o comprar más materiales y montar un cnc con dos motores para el ejez. De esta forma la estructura cambiaria drasticamente. Pero estaría preparada para soportar herramientas de gran peso, y no jugaría tanto con los limites de potencia.
+
+Estoy evaluando realizar la compra de un eje más con los respectivos soportes, tornillos y un motor nema17 más. De ser posible, tambien compraría otro paquete igual para montar el segundo ejeX.
+
+Tengo que avanzar en el concepto de esta nueva estructura cnc que se aleja del plan original de realizar la cnc del profe garcia de manera más eficiente. Esto creo que ya fue logrado al superar los obstaculo que se presentaban con una base de trabajo reducida, ampliando el area de trabajo de 10x10 a 35x35. La limitación de altura efectiva que tiene el cnc del profe garcia, es una desventaja demasiado grande como para trasladarla a una inversión que debe resultar practica y de servicio profesional.
+
+Teniendo en cuenta esto, descarto el modelo aplicado por el profe garcia y comienzo a trabajar en un modelo de cnc mucho mas robusto, eficiente y con miras a trabajar los equipos de manera profesional. Para esto voy a considerar algunos puntos.
+
+* Voy a reemplazar las varillas del eje y de 8mm por varillas de 10mm.
+* Voy a reemplazar el tornillo thsl de 8mm del eje y por uno de 10mm (si consigo el resto de las piezas.
+* Junto a esto tambien voy a reemplazar los soportes de carril.
+* Voy a tratar de equipar un segundo eje x clonado.
+* La cnc tendra dos ejesy clonados.
+* Voy a preparar las dimensiones de los espacios para poder montar motores tipo NEMA23, con lo cual deberia ser capaz de mecanisar aluminio.
+* Voy a preparar el cnc para que puedan colocarse dos contrapesos sobre los ejesy, de esta forma podría ayudar en futuras ocasiones a compensar problemas con el trabajo del motor.
+
+Luego de esta actualización voy a proceder a realizar algunos cambios en los ficheros, para preparar el trabajo del segundo concepto.
