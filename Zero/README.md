@@ -177,3 +177,17 @@ Otras mejoras son la preparación para montar hasta tres tornillos sobre el ejeX
 Una ves terminada la revisión recaulcule el recorrido efectivo del ejeX en 354mm. Debido a que debo enzanblar el arco superior las piezas del ejeY aún no estan suficientemente fijas como para determinar el area efectiva, pero es posible que alcance un numero similar. Respecto a la altura, no busco ningun valor específico, el diseño de la estructura tomara el recorrido máximo de una u otra forma. Ademas por como se observa la altura alcanzada sera más que superadora.
 
 Realice algunos cambios de nombres en los archivos para que se puedan encontrar mas facil. Pero tambien quedaron algunos archivos huerfanos que espero detectar y eliminar una vez que termine el concepto.
+
+### 20181012-1840
+
+Termine de realizar los calculos para ubicar el arco. Surgieron varios inconvenientes.
+
+Por un lado las varillas de acero del ejez alcanzan los 500mm es decir exactamente la mitad de 1metro, pero como dispongo de varillas de 1mt el corte no producira los 500mm sino menos. Esto impide alcanzar el maximo potencial del tornillo Z. Debido a que debo administrar cuidadosamente el dinero para comprar solo lo que es necesario para construir el segundo ejeZ, debo limitar la altura maxima a un poco mas de 290mm. La diferencia de altura dependera de la herramienta. Esta altura se correspondería con la altura de la impresión, dando un espacio efectivo de impresión de 354x334x290. En cualquier caso, es un area de trabajo de impresion mayor del estandar que es 220x220x200 y mucho mayor que las medidas 120x120x120 alcanzadas con el modelo del profe garcía y similares que utilizan los mismos materiales.
+
+Otro problema es que no logro desaserme por completo de dimensiones que rondan la decima de milimetro. Esto puede verse al completar el relleno del lateral para dar soporte al arco principal. Esto significa que para lograr solventar estos problemas, es obligatorio que exista una secuencia de ensanblado que priorize las piezas cruciales con la maxima precisión dejando como dependientes las piezas con mayor tolerancia.
+
+Otro problema surgio al momento de montar el extrusor en el concepto. La impresión sera la modalidad que posea la mayor area por lo que monte el extrusor para realizar calibraciones sobre al arco principal. Esta medida dio un numero redondo, pero al desplazar el extrusor, noto que colisiona con parte de la estructura de la columna Z derecha. Si omito esto, el area efectiva se ve reducida en aproximadamente 25 a 30mm. Por otro lado, el centro quedara desubicado.
+
+Una solución inmediata implica cortar la pieza para permitir que el extrusor circule sin problemas. Esta maniobra puede debilitar la estructura haciendola suceptible a vibraciones cuando se encuentra en la modalidad router. Otra opción es alejar el extrusor de la base de herramientas, pero esto genera una torsión sobre el eje que se trasnmite a todo el arco.
+
+Por ahora continuare con el resto de la estructura y luego modelare el resto de las herramientas potenciales y procedere a tomar alguna decisión.
