@@ -191,3 +191,16 @@ Otro problema surgio al momento de montar el extrusor en el concepto. La impresi
 Una solución inmediata implica cortar la pieza para permitir que el extrusor circule sin problemas. Esta maniobra puede debilitar la estructura haciendola suceptible a vibraciones cuando se encuentra en la modalidad router. Otra opción es alejar el extrusor de la base de herramientas, pero esto genera una torsión sobre el eje que se trasnmite a todo el arco.
 
 Por ahora continuare con el resto de la estructura y luego modelare el resto de las herramientas potenciales y procedere a tomar alguna decisión.
+
+### 20181012-1900
+
+|Profe Garcia|
+|Modelo|Dimensiones cm|Superficie cm2|Area cm3|
+|ProfeGarcia|X=12 Y=12 Z=12|144|1728 [1,7]
+|Estandar|X=20 Y=22 Z=20|440|8800 [8.8]
+|Zero|X=35.4 Y=33.4 Z=29|1182|34288 [34,3]
+
+||ProfeGarcia|Estandar|Zero
+|ProfeGarcia|0|-19%|-95%|
+|Estandar|+19%|0|-26%|
+|Zero|+95%|+29%|0|
