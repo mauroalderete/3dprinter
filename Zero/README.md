@@ -194,13 +194,14 @@ Por ahora continuare con el resto de la estructura y luego modelare el resto de 
 
 ### 20181012-1900
 
-|Profe Garcia|
-|Modelo|Dimensiones cm|Superficie cm2|Area cm3|
-|ProfeGarcia|X=12 Y=12 Z=12|144|1728 [1,7]
-|Estandar|X=20 Y=22 Z=20|440|8800 [8.8]
-|Zero|X=35.4 Y=33.4 Z=29|1182|34288 [34,3]
+| Modelo  |      Dim xyz     |  Sup |  Area |
+|----------|:-------------:|------:|------:|
+| ProfeGarcia | 12x12x12 | 144 | 1728 [1,7] |
+| Estandar | 20x22x20 | 440 | 8800 [8.8] |
+| Zero | 35.4x33.4x29 | 1182 |34288 [34,3] |
 
-||ProfeGarcia|Estandar|Zero
+| | ProfeGarcia | Estandar | Zero |
+|----------|:----------------:|------:|------:|
 |ProfeGarcia|0|-19%|-95%|
 |Estandar|+19%|0|-26%|
 |Zero|+95%|+29%|0|
