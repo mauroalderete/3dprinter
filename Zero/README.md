@@ -157,3 +157,23 @@ Teniendo en cuenta esto, descarto el modelo aplicado por el profe garcia y comie
 * Voy a preparar el cnc para que puedan colocarse dos contrapesos sobre los ejesy, de esta forma podría ayudar en futuras ocasiones a compensar problemas con el trabajo del motor.
 
 Luego de esta actualización voy a proceder a realizar algunos cambios en los ficheros, para preparar el trabajo del segundo concepto.
+
+### 20181012-1630
+
+Para comenzar el nuevo concepto elabore una copia completa del proyecto del modelo 0. Esto me permite modificar las  piezas mas basicas de ser necesario sin alterar el modelo anterior para ubicar futuras referencias. El nuevo concepto se encuentra en la carpeta modelo 1.
+
+Estuve trabajando sobre el eje Z con dos motores. Analice varias alternativas para ubicar el motor Y. Ninguna de las opciones parece completamente eficiente, todas las opciones presentan grandes desventajas que generar distintas fuerzas de torsion sobre las varillas de acero. De todas las opciones decidi emplear una solución que mantiene el centro de gravedad lo más cerca posible del motor ZLeft. De esta forma toda la fuerza del motor se transfiere al motorY, acompañado del motorZRight para compensar la fricción por desbalance y el peso de la herramienta.
+
+Las distancias necesarias para aprovechar al maximo el tornillo de 40cm implicaba realizar figuras y calados que podrían debilitar la estructura del arco. Por lo que decidi sacrificar recorrido en el eje Y para ganar robustes. Sin embargo, como mucho se redujo a area efectiva de 332, lo cual sige siendo significativamente superior al de la mayoria de los modelos.
+
+Durante el proceso de diseño me di cuenta que muchas de las medidas que estaba realizando se encuenran en la decima de milimetro, dimensiones que resultan impracticables. Así que antes de continuar con el modelado del arco que sostiene el carro principal realize una revisión de todas las piezas manufacturadas. Busque reducir los cortes a unidades enteras de milimetro, algo mucho más accecible. Sin embargo, tuve problemas con los agujeros y sus centrados, ya que dependen directamente de piezas fabricadas cuyas medidas si se extienden a la decima de milimetro. 
+
+Por suerte solo se indican medidas de medio milimetro, por lo que es posible compensar esta dimensión con margenes de error. Aún así el ajuste fue complicado.
+
+Revisar las dimensiones tambien causo que modificara las relaciones entre piezas. Por lo que mecanicamente, en teoria, deberia estar mucho mejor planteado.
+
+Otras mejoras son la preparación para montar hasta tres tornillos sobre el ejeX, claro que la modalidad sería un motorX o dos clonados. Esto previene algunas mejoras potenciales a futuro.
+
+Una ves terminada la revisión recaulcule el recorrido efectivo del ejeX en 354mm. Debido a que debo enzanblar el arco superior las piezas del ejeY aún no estan suficientemente fijas como para determinar el area efectiva, pero es posible que alcance un numero similar. Respecto a la altura, no busco ningun valor específico, el diseño de la estructura tomara el recorrido máximo de una u otra forma. Ademas por como se observa la altura alcanzada sera más que superadora.
+
+Realice algunos cambios de nombres en los archivos para que se puedan encontrar mas facil. Pero tambien quedaron algunos archivos huerfanos que espero detectar y eliminar una vez que termine el concepto.
