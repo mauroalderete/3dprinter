@@ -205,3 +205,21 @@ Por ahora continuare con el resto de la estructura y luego modelare el resto de 
 |ProfeGarcia|0|-19%|-95%|
 |Estandar|+19%|0|-26%|
 |Zero|+95%|+29%|0|
+
+### 20181014-0122
+
+Termine de realizar la primer instancia del modelo de CNC. Realice los ajustes necesarios para determinar las dimensiones de manera que no utilicen, dentro de lo posible, valores en el orden de la decima de milimetro.
+
+Existen algunos detalles a solucionar. 
+* El extrusor colisiona con la columna derecha del eje ZLeft
+* El largo de los laterales mide 811.20 mm, es decir emplea una unidad por sobre la decima de milimetro.
+* La electronica que esta ubicada en la parte trasera aún no posee los espacios definidos.
+* El largo del tubo de teflon puede no ser suficiente.
+
+Muchos de estos problemas pueden ir siendo resultos a lo largo del ensamblado.
+
+Sin embargo, el diseño llego a un punto en el que es posible revisar la lista de materiales a comprar. En mercado libre encontre lo que falta. Debido a la dispersión de los precios y productos aislados que venden cada proveedor el costo final de la compra ronda los 3600. Una primer compra podría realizarse para los elementos de motorización y de ejes. Los materiales de mecanización deberan quedar para la proxima. Otra forma probable de realizar la compra es pagando los costos de envios.
+
+Respecto al motor, 3D Insumos ofrece un motor de 6,6kg a 1,68A al mismo precio que uno de 4,4Kg. Es una gran oferta que se debe aprovechar, sin embargo sería probable que la etapa de potencia no soporte el consumo de corriente. Es crucial revisar esos datos tecnicos antes de continuar. En el peor de los casos sería posible comprar una etapa de potencia superior o buscar adaptar el circuito de RAMPS para permitir el uso de otras potencias.
+
+Una vez realizadas las compras es oportuno ir revisando, diseñando, montando y probando el proceso de corte y mecanizado de las piezas.
